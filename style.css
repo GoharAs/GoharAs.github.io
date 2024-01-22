@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.container .top {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+    padding-bottom: 0;
+    background-color: rgb(135, 187, 190);
+}
+
+.container .top .imgBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container .top .imgBox .box {
+    position: relative;
+    width: 50%;
+    min-width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.container .top .imgBox .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .top .topText {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.container .top .topText h1 {
+    font-size: 45px;
+    color: rgb(20, 87, 121);
+    font-weight: 800;
+}
+
+.container .top .topText h2 {
+    font-size: 30px;
+    color: rgb(20, 87, 121);
+    font-weight: 650;
+}
+
+.container .content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container .content .left_side {
+    border-right: 2px solid rgb(20, 87, 121);
+}
+
+.container .content h3 {
+    padding-left: 40px;
+    font-weight: 800;
+    font-size: 20px;
+    color: rgb(20, 87, 121);
+    width: 50%;
+    justify-content: center;
+}
+
+.container .content .icon {
+    padding-left: 10px;
+}
+
+.container .content .text {
+    padding-left: 8px;
+}
+
+.container .content .right_side {
+    padding-left: 40px;
+}
+
+.container .content .right_side .text h5 {
+    font-size: 15px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+}
+
+.box .year {
+    min-width: 150px;
+    color: rgb(2, 51, 63);
+    font-size: 18px;
+    line-height: 0.5;
+}
+
+.box .text h5 {
+    color: rgb(2, 51, 63);
+    font-size: 20px;
+}
+
+.box .text p {
+    font-size: 15px;
+}
